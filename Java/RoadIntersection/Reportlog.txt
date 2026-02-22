@@ -1,0 +1,170 @@
+2026-02-22 00:34:19 Beginning Vehicle File Import.
+2026-02-22 00:34:19  File Import Complete.
+2026-02-22 00:34:19  Beginning Phase File Import.
+2026-02-22 00:34:19 File Import Complete.
+2026-02-22 00:34:19 Organising vehicles into lanes
+2026-02-22 00:34:19 Phase1 - [BD51SMR , Waiting , CAR , 3 , 5 , Left , 15}, SK15CVC , Waiting , BUS , 12 , 20 , Left , 27}]
+2026-02-22 00:34:19 Phase2 - []
+2026-02-22 00:34:19 Phase3 - []
+2026-02-22 00:34:19 Phase4 - [AC67SAE , Waiting , CAR , 5 , 4 , Right , 15}, TREE345 , Waiting , BUS , 12 , 20 , Straight , 27}]
+2026-02-22 00:34:19 Phase5 - [BR33DED , Waiting , CAR , 5 , 4 , Left , 15}]
+2026-02-22 00:34:19 Phase6 - [SA11LLY , Waiting , TRUCK , 10 , 20 , Straight , 30}]
+2026-02-22 00:34:19 Phase7 - []
+2026-02-22 00:34:19 Phase8 - [GR33NNN , Waiting , TRUCK , 12 , 25 , Straight , 25}]
+2026-02-22 00:34:21 Organising vehicles into lanes
+2026-02-22 00:34:21 Phase1 - [BD51SMR , Waiting , CAR , 3 , 5 , Left , 15}, SK15CVC , Waiting , BUS , 12 , 20 , Left , 27}]
+2026-02-22 00:34:21 Phase2 - []
+2026-02-22 00:34:21 Phase3 - []
+2026-02-22 00:34:21 Phase4 - [AC67SAE , Waiting , CAR , 5 , 4 , Right , 15}, TREE345 , Waiting , BUS , 12 , 20 , Straight , 27}]
+2026-02-22 00:34:21 Phase5 - [BR33DED , Waiting , CAR , 5 , 4 , Left , 15}]
+2026-02-22 00:34:21 Phase6 - [SA11LLY , Waiting , TRUCK , 10 , 20 , Straight , 30}]
+2026-02-22 00:34:21 Phase7 - []
+2026-02-22 00:34:21 Phase8 - [GR33NNN , Waiting , TRUCK , 12 , 25 , Straight , 25}]
+2026-02-22 00:34:21 ------ Phases : 1 & 2-------
+2026-02-22 00:34:21 Changing Traffic Lighttrue
+2026-02-22 00:34:21 Changing Traffic Lighttrue
+2026-02-22 00:34:21 Traffic State G
+2026-02-22 00:34:21 Traffic State G
+2026-02-22 00:34:21 Traffic State G
+2026-02-22 00:34:21 Traffic State G
+2026-02-22 00:34:22 Traffic State G
+2026-02-22 00:34:23 Vehicles Crossed [BD51SMR , Crossed , CAR , 3 , 5 , Left , 15}, SK15CVC , Crossed , BUS , 12 , 20 , Left , 27}]
+2026-02-22 00:34:23 Changing Traffic Lightfalse
+2026-02-22 00:34:23 Changing Traffic Lightfalse
+2026-02-22 00:34:23 Changing Traffic Lightfalse
+2026-02-22 00:34:23 ------ Phases : 3 & 4-------
+2026-02-22 00:34:23 Changing Traffic Lighttrue
+2026-02-22 00:34:23 Changing Traffic Lighttrue
+2026-02-22 00:34:23 Traffic State G
+2026-02-22 00:34:23 Traffic State G
+2026-02-22 00:34:23 Traffic State G
+2026-02-22 00:34:23 Traffic State G
+2026-02-22 00:34:24 Traffic State G
+2026-02-22 00:34:25 Vehicles Crossed [AC67SAE , Crossed , CAR , 5 , 4 , Right , 15}, TREE345 , Crossed , BUS , 12 , 20 , Straight , 27}]
+2026-02-22 00:34:25 Changing Traffic Lightfalse
+2026-02-22 00:34:27 RQN11DX has been added
+2026-02-22 00:34:29 Changing Traffic Lightfalse
+2026-02-22 00:34:29 Changing Traffic Lightfalse
+2026-02-22 00:34:29 ------ Phases : 5 & 6-------
+2026-02-22 00:34:29 Changing Traffic Lighttrue
+2026-02-22 00:34:29 Changing Traffic Lighttrue
+2026-02-22 00:34:29 Traffic State G
+2026-02-22 00:34:29 Traffic State G
+2026-02-22 00:34:29 Traffic State G
+2026-02-22 00:34:29 Traffic State G
+2026-02-22 00:34:29 Traffic State G
+2026-02-22 00:34:29 Traffic State G
+2026-02-22 00:34:30 Vehicles Crossed [BR33DED , Crossed , CAR , 5 , 4 , Left , 15}]
+2026-02-22 00:34:30 Changing Traffic Lightfalse
+2026-02-22 00:34:30 Vehicles Crossed [SA11LLY , Crossed , TRUCK , 10 , 20 , Straight , 30}]
+2026-02-22 00:34:30 Changing Traffic Lightfalse
+2026-02-22 00:34:33 OWR66FR has been added
+2026-02-22 00:34:33 Changing Traffic Lightfalse
+2026-02-22 00:34:33 Changing Traffic Lightfalse
+2026-02-22 00:34:33 ------ Phases : 7 & 8-------
+2026-02-22 00:34:33 Changing Traffic Lighttrue
+2026-02-22 00:34:33 Changing Traffic Lighttrue
+2026-02-22 00:34:33 Traffic State G
+2026-02-22 00:34:33 Traffic State G
+2026-02-22 00:34:33 Traffic State G
+2026-02-22 00:34:34 Vehicles Crossed [GR33NNN , Crossed , TRUCK , 12 , 25 , Straight , 25}]
+2026-02-22 00:34:34 Changing Traffic Lightfalse
+2026-02-22 00:34:37 Changing Traffic Lightfalse
+2026-02-22 00:34:37 Changing Traffic Lightfalse
+2026-02-22 00:34:37 Organising vehicles into lanes
+2026-02-22 00:34:37 Phase1 - [BD51SMR , Crossed , CAR , 3 , 5 , Left , 15}, SK15CVC , Crossed , BUS , 12 , 20 , Left , 27}]
+2026-02-22 00:34:37 Phase2 - []
+2026-02-22 00:34:37 Phase3 - []
+2026-02-22 00:34:37 Phase4 - [AC67SAE , Crossed , CAR , 5 , 4 , Right , 15}, TREE345 , Crossed , BUS , 12 , 20 , Straight , 27}]
+2026-02-22 00:34:37 Phase5 - [BR33DED , Crossed , CAR , 5 , 4 , Left , 15}]
+2026-02-22 00:34:37 Phase6 - [SA11LLY , Crossed , TRUCK , 10 , 20 , Straight , 30}]
+2026-02-22 00:34:37 Phase7 - []
+2026-02-22 00:34:37 Phase8 - [GR33NNN , Crossed , TRUCK , 12 , 25 , Straight , 25}]
+2026-02-22 00:34:37 ------ Phases : 1 & 2-------
+2026-02-22 00:34:37 Changing Traffic Lighttrue
+2026-02-22 00:34:37 Changing Traffic Lighttrue
+2026-02-22 00:34:39 IBZ47GQ has been added
+2026-02-22 00:34:39 Changing Traffic Lightfalse
+2026-02-22 00:34:39 Changing Traffic Lightfalse
+2026-02-22 00:34:39 ------ Phases : 3 & 4-------
+2026-02-22 00:34:39 Changing Traffic Lighttrue
+2026-02-22 00:34:39 Changing Traffic Lighttrue
+2026-02-22 00:34:45 HFU03TS has been added
+2026-02-22 00:34:45 Changing Traffic Lightfalse
+2026-02-22 00:34:45 Changing Traffic Lightfalse
+2026-02-22 00:34:45 ------ Phases : 5 & 6-------
+2026-02-22 00:34:45 Changing Traffic Lighttrue
+2026-02-22 00:34:45 Changing Traffic Lighttrue
+2026-02-22 00:34:49 Changing Traffic Lightfalse
+2026-02-22 00:34:49 Changing Traffic Lightfalse
+2026-02-22 00:34:49 ------ Phases : 7 & 8-------
+2026-02-22 00:34:49 Changing Traffic Lighttrue
+2026-02-22 00:34:49 Changing Traffic Lighttrue
+2026-02-22 00:34:51 MSC33TE has been added
+2026-02-22 00:34:53 Changing Traffic Lightfalse
+2026-02-22 00:34:53 Changing Traffic Lightfalse
+2026-02-22 00:34:53 Organising vehicles into lanes
+2026-02-22 00:34:53 Phase1 - [BD51SMR , Crossed , CAR , 3 , 5 , Left , 15}, SK15CVC , Crossed , BUS , 12 , 20 , Left , 27}]
+2026-02-22 00:34:53 Phase2 - [MSC33TE , Waiting , BUS , 8 , 12 , Straight , 10}]
+2026-02-22 00:34:53 Phase3 - []
+2026-02-22 00:34:53 Phase4 - [AC67SAE , Crossed , CAR , 5 , 4 , Right , 15}, TREE345 , Crossed , BUS , 12 , 20 , Straight , 27}]
+2026-02-22 00:34:53 Phase5 - [BR33DED , Crossed , CAR , 5 , 4 , Left , 15}]
+2026-02-22 00:34:53 Phase6 - [SA11LLY , Crossed , TRUCK , 10 , 20 , Straight , 30}]
+2026-02-22 00:34:53 Phase7 - []
+2026-02-22 00:34:53 Phase8 - [GR33NNN , Crossed , TRUCK , 12 , 25 , Straight , 25}]
+2026-02-22 00:34:53 ------ Phases : 1 & 2-------
+2026-02-22 00:34:53 Changing Traffic Lighttrue
+2026-02-22 00:34:53 Changing Traffic Lighttrue
+2026-02-22 00:34:55 Changing Traffic Lightfalse
+2026-02-22 00:34:55 Changing Traffic Lightfalse
+2026-02-22 00:34:55 ------ Phases : 3 & 4-------
+2026-02-22 00:34:55 Changing Traffic Lighttrue
+2026-02-22 00:34:55 Changing Traffic Lighttrue
+2026-02-22 00:34:57 EBP20HB has been added
+2026-02-22 00:35:01 Changing Traffic Lightfalse
+2026-02-22 00:35:01 Changing Traffic Lightfalse
+2026-02-22 00:35:01 ------ Phases : 5 & 6-------
+2026-02-22 00:35:01 Changing Traffic Lighttrue
+2026-02-22 00:35:01 Changing Traffic Lighttrue
+2026-02-22 00:35:03 YGO54ZM has been added
+2026-02-22 00:35:05 Changing Traffic Lightfalse
+2026-02-22 00:35:05 Changing Traffic Lightfalse
+2026-02-22 00:35:05 ------ Phases : 7 & 8-------
+2026-02-22 00:35:05 Changing Traffic Lighttrue
+2026-02-22 00:35:05 Changing Traffic Lighttrue
+2026-02-22 00:35:09 BYO26PA has been added
+2026-02-22 00:35:09 Changing Traffic Lightfalse
+2026-02-22 00:35:09 Changing Traffic Lightfalse
+2026-02-22 00:35:09 Organising vehicles into lanes
+2026-02-22 00:35:09 Phase1 - [BD51SMR , Crossed , CAR , 3 , 5 , Left , 15}, SK15CVC , Crossed , BUS , 12 , 20 , Left , 27}, YGO54ZM , Waiting , BUS , 8 , 12 , Left , 10}]
+2026-02-22 00:35:09 Phase2 - [EBP20HB , Waiting , BUS , 8 , 14 , Right , 10}]
+2026-02-22 00:35:09 Phase3 - []
+2026-02-22 00:35:09 Phase4 - [AC67SAE , Crossed , CAR , 5 , 4 , Right , 15}, TREE345 , Crossed , BUS , 12 , 20 , Straight , 27}]
+2026-02-22 00:35:09 Phase5 - [BR33DED , Crossed , CAR , 5 , 4 , Left , 15}]
+2026-02-22 00:35:09 Phase6 - [SA11LLY , Crossed , TRUCK , 10 , 20 , Straight , 30}, BYO26PA , Waiting , BUS , 8 , 11 , Straight , 10}]
+2026-02-22 00:35:09 Phase7 - []
+2026-02-22 00:35:09 Phase8 - [GR33NNN , Crossed , TRUCK , 12 , 25 , Straight , 25}]
+2026-02-22 00:35:09 ------ Phases : 1 & 2-------
+2026-02-22 00:35:09 Changing Traffic Lighttrue
+2026-02-22 00:35:09 Changing Traffic Lighttrue
+2026-02-22 00:35:11 Changing Traffic Lightfalse
+2026-02-22 00:35:11 Changing Traffic Lightfalse
+2026-02-22 00:35:11 ------ Phases : 3 & 4-------
+2026-02-22 00:35:11 Changing Traffic Lighttrue
+2026-02-22 00:35:11 Changing Traffic Lighttrue
+2026-02-22 00:35:15 OYR03WL has been added
+2026-02-22 00:35:17 Changing Traffic Lightfalse
+2026-02-22 00:35:17 Changing Traffic Lightfalse
+2026-02-22 00:35:17 ------ Phases : 5 & 6-------
+2026-02-22 00:35:17 Changing Traffic Lighttrue
+2026-02-22 00:35:17 Changing Traffic Lighttrue
+2026-02-22 00:35:21 FXE57GA has been added
+2026-02-22 00:35:21 Changing Traffic Lightfalse
+2026-02-22 00:35:21 Changing Traffic Lightfalse
+2026-02-22 00:35:21 ------ Phases : 7 & 8-------
+2026-02-22 00:35:21 Changing Traffic Lighttrue
+2026-02-22 00:35:21 Changing Traffic Lighttrue
+2026-02-22 00:35:23 Total Emissions : 97g
+
+2026-02-22 00:35:23 Average Wait : 32s
+
