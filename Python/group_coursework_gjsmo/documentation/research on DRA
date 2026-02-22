@@ -1,0 +1,34 @@
+Research findings on the role of DIMENSIONALTY REDUCTION ALGORITHMS 
+
+Our current project which involves training a ML algorithm using image data to diagnose eye diseases
+There are several stages involded in this including Image Acquisition, Pre-Processing, Feature Extraction, and Similarity Matching.
+However, a major issue is the vast number of features extracted during the Feature Extraction stage of Images. These features require significant memory and computational resources. 
+This is where "DIMENSIONALITY REDUCTION ALGORITHMS" come into play. They help in distilling only the essential features that best describe the images,
+thereby streamlining the process without sacrificing much in terms of accuracy.
+Most importantly, they achieve this without significantly compromising the algorithm's ability to accurately diagnose eye diseases.
+
+We've listed some DRA below
+
+- Principal Component Analysis (PCA)
+PCA is a statistical method that can be used to reduce the dimensionality of images while preserving their important features. 
+Essentially, it finds the axes with maximum variance where the data is most spread.
+
+Pros:
+Easy to implement,Computationally efficient,Works well when the data distribution is approximately Gaussian
+
+Cons:
+Linear algorithm, which may not capture complex structures, Loss of interpretability
+
+
+- Linear Discriminant Analysis (LDA)
+LDA aims to find the linear combinations of features that best separate different classes. In contrast to PCA, which ignores class labels and aims to capture the most variance, LDA uses class labels to find a projection that maximizes the distance between the means of different classes while minimizing the spread (i.e., the scatter) within each class.
+
+Pros:
+Supervised: Makes use of the class labels, providing potentially better performance for classification tasks.
+Computational Efficiency: Generally faster than methods like t-SNE and UMAP.
+Dimension Reduction: Reduces dimensions to C−1 at most, where C is the number of classes, which can be advantageous for multi-class problems.
+
+Cons:
+Assumptions: Assumes that the independent variables are normally distributed and have the same covariance matrix for each class.
+Linearity: Like PCA, it is a linear method and may not capture complex, non-linear relationships.
+Overfitting: Can be prone to overfitting if the number of observations is much smaller than the number of dimensions.

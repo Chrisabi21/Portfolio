@@ -1,0 +1,49 @@
+Code review for "visualisation of age distribution"
+
+The code is well-commented, explaining what each block is intended to do. This is a good practice  to maintain readability and understanding of the code.
+However, the code could potentially improve in consistency in the following ways:
+
+* Code Layout: The layout is generally consistent, but best practice would  include consistent spacing and indentation within code blocks for better readability.
+* Variable Naming: The naming of the variables appears to be consistent, but it is better to use descriptive names for clarity for example label_columns is clear,
+  but single-letter variable names like df for the dataframe might be made more descriptive( thoughts on this ) And using consistent naming conventions
+  eg using (underscores, it should be consistent).
+
+In conclusion, the code does follow a consistent structure appropriate for this project
+
+
+
+
+
+Code review for "disease and age visualisation notebook"
+
+* Use of comments to explain the steps and decisions.
+* Consistent naming conventions for variables.
+* Code is organized into cells with each performing a distinct task.
+* Plots are labeled and titled to convey clear information.
+
+However, the code could potentially improve by 
+Comment Typing Errors: There are some typographical errors in the comments
+
+concluson : the code is clear and concise but few typographical errors.
+
+
+
+
+
+
+Code review for disease and  sex distribution 
+Overall, the code seems readable and maintainable 
+
+* Consistent naming conventions for variables.
+* Use of clear comments to explain the steps and decisions.
+* The analysis is straight to the point and elaborate
+
+
+
+
+Code review for disease and  sex distribution 
+The code follows a consistent structure and naming conventions commonly used but 
+* Variable Naming: while we are still deliberating this, Variable names could be more descriptive. For example, instead of df, 
+	a more descriptive name could be diagnosis_data or eye_conditions_df to convey the meaning more clearly.
+* Code Comments: so while there are comments, a few more descriptive comments to explain the reasoning and results of 
+	certain code blocks would help in understanding
