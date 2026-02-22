@@ -1,0 +1,49 @@
+EXAMPLE REPORT 
+
+| Rank | ID        | Name                                  | Age     | SharePrices                      | Overall | Location        | Products                                             
+
+| 01   | 60242     | ﻿Dangote Cement                       | 40 years| 250, 252, 254, 256, 258          | 254.0   | Lagos,  Nigeria | Cement,  clinker,  ready-mix concrete                
+
+| 02   | 188680    | MTN Nigeria                           | 36 years| 180, 182, 184, 186, 188          | 184.0   | Ikoyi,  Nigeria | Mobile voice and data services,  mobile money services,  home broadband services,  enterprise solutions
+
+| 03   | 10112671  | Airtel Africa                         | 33 years| 110, 112, 114, 116, 118          | 114.0   | Lagos,  Nigeria | Mobile voice and data services,  mobile money services,  home broadband services,  enterprise solutions
+
+| 04   | 101533    | BUA Cement                            | 29 years| 70, 72, 74, 76, 78               | 74.0    | Edo,  Nigeria   | Cement,  clinker,  ready-mix concrete                
+
+| 05   | 120953    | BUA Foods                             | 27 years| 50, 52, 54, 56, 58               | 54.0    | Kano,  Nigeria  | Sugar,  flour,  pasta,  rice,  edible oils           
+
+| 06   | 2800      | Nestle Nigeria                        | 67 years| 1500, 1520, 1540, 1560, 1580     | 1540.0  | Lagos,  Nigeria | Food and beverage products,  including milk,  cereals,  confectionery,  and coffee
+
+| 07   | 1735      | Unilever Nigeria                      | 65 years| 1000, 1020, 1040, 1060, 1080     | 1040.0  | Lagos,  Nigeria | Food and beverage products,  home care products,  personal care products
+
+| 08   | 550       | 21                                    | 68 years| 700, 720, 740, 760, 780          | 740.0   | Lagos,  Nigeria | Beer,  spirits,  and non-alcoholic beverages         
+
+| 09   | 133       | Nigerian Breweries                    | 79 years| 600, 620, 640, 660, 680          | 640.0   | Lagos,  Nigeria | Beer,  spirits,  and non-alcoholic beverages         
+
+| 10   | 175       | Flour Mills of Nigeria                | 63 years| 400, 420, 440, 460, 480          | 440.0   | Lagos,  Nigeria | Wheat flour,  pasta,  and other food products        
+
+| 11   | 3182      | Access Holdings                       | 39 years| 40, 42, 44, 46, 48               | 44.0    | Lagos,  Nigeria | Banking services,  investment banking services,  asset management services
+
+| 12   | 2754      | Zenith Bank                           | 38 years| 30, 32, 34, 36, 38               | 34.0    | Lagos,  Nigeria | Banking services,  investment banking services,  asset management services
+
+| 13   | 253       | Guaranty Trust Bank                   | 37 years| 25, 27, 29, 31, 33               | 29.0    | Lagos,  Nigeria | Banking services,  investment banking services,  asset management services
+
+| 14   | 10112670  | United Bank for Africa                | 74 years| 20, 22, 24, 26, 28               | 24.0    | Lagos,  Nigeria | Banking services,  investment banking services,  asset management services
+
+| 15   | 832       | FBN Holdings                          | 66 years| 15, 17, 19, 21, 23               | 19.0    | Lagos,  Nigeria | Banking services,  investment banking services,  asset management services
+
+| 19   | 62020     | Lafarge Africa                        | 49 years| 50, 52, 54, 56, 58               | 54.0    | Lagos,  Nigeria | Cement,  clinker,  ready-mix concrete                
+
+| 20   | 21367     | Dangote Sugar Refinery                | 35 years| 40, 42, 44, 46, 48               | 44.0    | Lagos,  Nigeria | Sugar,  molasses,  and ethanol                       
+
+
+Nestle Nigeria is company number 2800.
+Nestle Nigeria produces Food and beverage products,  including milk,  cereals,  confectionery,  and coffee and is located at Lagos,  Nigeria.
+Nestle Nigeria was established 67 years ago and has a past five-day share price of 1500, 1520, 1540, 1560, 1580.
+Therefore they have an average unaltered share price of 1540.0
+
+Four Statistical Method
+The maximum Share Price among the list of companies is 1580
+The minimum Share Price among the list of companies is 15
+The Average Share Price of all the Share Prices is 313.0
+The Standard Deviation for all the share Prices is 424.7991220773026
