@@ -6,7 +6,9 @@ import random
 import numpy as np
 
 # read csv
-df = pd.read_csv("data_banknote_authentication.txt", names=["F1", "F2", "F3", "F4", "Label"])
+import os
+print(os.getcwd())
+df = pd.read_csv("Python/NeuralNetwork/data_banknote_authentication1.txt", names=["F1", "F2", "F3", "F4", "Label"])
 X = df.drop("Label",axis=1)
 print(X.shape)
 y = df['Label'].values
