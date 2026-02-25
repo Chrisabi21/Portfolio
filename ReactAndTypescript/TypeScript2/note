@@ -1,0 +1,33 @@
+To Get started
+Simple Typescript Project creation
+1. Run npm init -y to create package.json
+2. use the [npm i --save-dev typescript] or [npm install typescript --save-dev] (To install typescript)
+3. To run the compiler use npx tsc
+4. To create the config file use npx tsc --init (To create the tsconfig.json file)
+5. under script in the package.json change the test to another name and add tsc to it example(runDev:"tsc")
+    This will compile the code everytime you call the variable name runDev example (npm run runDev)
+6. Create an index.ts, when compiled will create a index.js.
+
+
+
+Creating Project with a Package called Vite 
+1. npm init vite@latest add-project-name-here -- --template vanilla-ts example (npm init vite@latest web-porfolio -- --template vanilla-ts)
+2. Then npm install (It generates our node modules) 
+3. Then npm run dev (It creates our url)
+4. We can also do npm run build  
+
+
+
+
+
+
+From W3School
+6. Add the following to the tsconfig file 
+{
+  "include": ["src"],
+  "compilerOptions": {
+    "outDir": "./build"
+  }
+}
+7. Create your src folder. This is where you will store your typescript files
+8. Create your index.ts file in the src folder
