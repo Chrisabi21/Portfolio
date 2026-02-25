@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const resume = () => {
   return (
     <motion.section
-        id="Resume"
+        id="resume"
         className="h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-800"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

@@ -76,14 +76,14 @@ const Contact = () => {
 
     {/* Icons Row */}
     <div className="mt-8 flex justify-center space-x-6 text-blue-500">
-      <a href="tel:+1234567890" className="hover:text-blue-600 transition">
+      <a href="tel:07901654395" className="hover:text-blue-600 transition">
         <Phone size={28} />
       </a>
-      <a href="mailto:youremail@example.com" className="hover:text-blue-600 transition">
+      <a href="mailto:seunabi20@gmail.com" className="hover:text-blue-600 transition">
         <Mail size={28} />
       </a>
       <a
-        href="https://www.linkedin.com/in/your-profile"
+        href="https://www.linkedin.com/in/oluwaseun-abiodun34"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-blue-600 transition"
