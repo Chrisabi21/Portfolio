@@ -21,7 +21,7 @@ const About: React.FC = () => {
           className="flex justify-center"
         >
           <img
-            src="/about-image.png"
+            src="/about-image.jpeg"
             alt="About me"
             className="w-full max-w-md rounded-3xl object-cover shadow-2xl"
           />

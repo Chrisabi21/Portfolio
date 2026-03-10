@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
           duration={500}
           className="cursor-pointer"
         >
-          <img src="logo.png" alt="Logo" className="h-16 w-auto" />
+          <img src="/logo.png" alt="Logo" className="h-16 w-auto" />
         </Link>
 
         {/* Menu Items on the Right */}
