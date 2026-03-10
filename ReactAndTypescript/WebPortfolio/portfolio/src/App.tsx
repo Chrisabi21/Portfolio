@@ -6,6 +6,7 @@ import About from "./sections/about";
 import Skills from "./sections/skills";
 import Contact from "./sections/contact";
 import Resume from "./sections/resume";
+import CursorGlow from "./components/cursorGlow";
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(
@@ -25,7 +26,9 @@ const App = () => {
   }, [darkMode]);
 
   return (
+    
     <div className="min-h-screen bg-gradient-to-br from-blue-400 to-blue-700 dark:bg-gray-900 text-gray-900 dark:text-white">
+      <CursorGlow />
       <Navbar/>
       <Introduction />
       <About />
