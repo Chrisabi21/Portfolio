@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+.matrix-name {
+  font-family: "VT323", monospace;
+  color: #7cff7c;
+  letter-spacing: 1px;
+  text-shadow:
+    0 0 4px rgba(124, 255, 124, 0.9),
+    0 0 10px rgba(124, 255, 124, 0.7),
+    0 0 20px rgba(124, 255, 124, 0.45);
+  animation: matrix-flicker 2.2s infinite;
+}
+
+@keyframes matrix-flicker {
+  0%, 100% { opacity: 1; }
+  8% { opacity: 0.85; }
+  10% { opacity: 1; }
+  12% { opacity: 0.82; }
+  14% { opacity: 1; }
+  60% { opacity: 0.92; }
+  62% { opacity: 1; }
+}

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "./cursorGlow.css";
 
 type Position = {
   x: number;

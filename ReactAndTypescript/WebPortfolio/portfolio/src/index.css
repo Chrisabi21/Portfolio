@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.matrix-name {
+  font-family: "VT323", monospace;
+  color: #7cff7c;
+  letter-spacing: 1px;
+  text-shadow:
+    0 0 4px rgba(124, 255, 124, 0.9),
+    0 0 10px rgba(124, 255, 124, 0.7),
+    0 0 20px rgba(124, 255, 124, 0.45);
+  animation: matrix-flicker 2.2s infinite;
+}
+
+@keyframes matrix-flicker {
+  0%, 100% { opacity: 1; }
+  8% { opacity: 0.85; }
+  10% { opacity: 1; }
+  12% { opacity: 0.82; }
+  14% { opacity: 1; }
+  60% { opacity: 0.92; }
+  62% { opacity: 1; }
+}
+
+.cursor-glow {
+  position: fixed;
+  width: 800px;
+  height: 800px;
+  border-radius: 9999px;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.05) 35%,
+    rgba(255, 255, 255, 0) 75%
+  );
+  filter: blur(28px);
+}

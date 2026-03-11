@@ -7,20 +7,21 @@ const Introduction = () => {
   return (
     <section
       id="introduction"
-      className="h-screen flex flex-col justify-center items-start px-16 md:px-32 bg-gray-900 text-white relative"
+      className="h-screen flex flex-col justify-center items-start px-16 md:px-32 text-white relative overflow-hidden"
       style={{
-        backgroundImage: `url(/tech.jpg)`,
+        backgroundImage: `url(/header.jpg)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Overlay Glow */}
-      <div className="absolute inset-0 bg-blue-500 opacity-10 blur-3xl"></div>
+      {/* Dark overlays to dim background image */}
+      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/45 to-black/25"></div>
 
       {/* Small Intro Text */}
       <motion.p
-        className="text-blue-400 text-xl font-mono mb-2 relative z-10"
+        className="text-blue-300 text-xl font-mono mb-2 relative z-10 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]"
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
@@ -30,7 +31,7 @@ const Introduction = () => {
 
       {/* Typing Effect for Name */}
       <motion.h1
-        className="text-7xl font-bold text-gray-100 mb-2 leading-tight relative z-10"
+        className="matrix-name text-7xl mb-2 leading-tight relative z-10"
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.4 }}
@@ -43,9 +44,10 @@ const Introduction = () => {
         />
       </motion.h1>
 
+
       {/* Subheading */}
       <motion.h2
-        className="text-6xl font-semibold text-white mb-6 relative z-10"
+        className="text-6xl font-semibold text-gray-100 mb-6 relative z-10 drop-shadow-[0_3px_12px_rgba(0,0,0,0.95)]"
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: [0, -10, 0] }}
         transition={{ duration: 1, delay: 0.8, ease: "easeInOut" }}
@@ -55,7 +57,7 @@ const Introduction = () => {
 
       {/* Description */}
       <motion.p
-        className="text-gray-300 max-w-2xl text-lg mb-6 relative z-10"
+        className="text-gray-200 max-w-2xl text-lg mb-6 relative z-10 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]"
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 1 }}
@@ -76,7 +78,7 @@ const Introduction = () => {
           to="contact"
           smooth={true}
           duration={500}
-          className="border-2 border-blue-400 text-white text-lg px-8 py-3 rounded-md hover:bg-blue-400 hover:text-gray-900 transition duration-300 cursor-pointer"
+          className="border-2 border-blue-300 text-white text-lg px-8 py-3 rounded-md hover:bg-blue-300 hover:text-gray-900 transition duration-300 cursor-pointer"
         >
           Contact Me
         </Link>
