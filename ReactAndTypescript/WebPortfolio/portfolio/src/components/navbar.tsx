@@ -49,13 +49,6 @@ const Navbar = ({ activeSection, onNavigate }: NavbarProps) => {
                         section
                       )}
                     </span>
-                    {/* Active underline indicator */}
-                    {/* {isActive && (
-                      <motion.div
-                        layoutId="navIndicator"
-                        className="absolute bottom-0 h-0.5 bg-blue-400 w-full"
-                      />
-                    )} */}
                   </button>
                 </li>
               );
