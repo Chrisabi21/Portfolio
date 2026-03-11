@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "./components/navbar";
-import Footer from "./components/footer";
-import Introduction from "./sections/introduction";
+import Footer from "./components/Footer";
+import Home from "./sections/home";
 import About from "./sections/about";
 import Skills from "./sections/skills";
 import Contact from "./sections/contact";
@@ -9,48 +10,50 @@ import Resume from "./sections/resume";
 import CursorGlow from "./components/cursorGlow";
 import LoadingScreen from "./components/LoadingScreen";
 
+const pageVariants = {
+  initial: { opacity: 0, y: 30 },
+  animate: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+  exit: { opacity: 0, y: -30, transition: { duration: 0.3, ease: "easeIn" } },
+};
+
+const sections: Record<string, React.ReactNode> = {
+  home: <Home />,
+  about: <About />,
+  skills: <Skills />,
+  resume: <Resume />,
+  contact: <Contact />,
+};
+
 const App = () => {
-  const [darkMode, setDarkMode] = useState(
-    localStorage.getItem("theme") === "dark"
-  );
-  const [isLoading, setIsLoading] = useState(true); // renamed
-
-  const toggleDarkMode = () => setDarkMode(!darkMode);
-
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-  }, [darkMode]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [activeSection, setActiveSection] = useState("home");
 
   return (
     <>
-      {isLoading && (
-        <LoadingScreen onComplete={() => setIsLoading(false)} />
-      )}
+      <AnimatePresence>
+        {isLoading && <LoadingScreen onComplete={() => setIsLoading(false)} />}
+      </AnimatePresence>
 
       {!isLoading && (
-        <div className="min-h-screen bg-gradient-to-br from-blue-400 to-blue-700 dark:bg-gray-900 text-gray-900 dark:text-white">
+        <div className="h-screen overflow-hidden bg-gray-900 text-white">
           <CursorGlow />
-          <Navbar />
-          <Introduction />
-          <About />
-          <Skills />
-          <Resume />
-          <Contact />
-          <Footer />
+          <Navbar activeSection={activeSection} onNavigate={setActiveSection} />
 
-          {/* Floating Dark Mode Toggle */}
-          <button
-            onClick={toggleDarkMode}
-            className="fixed bottom-6 right-6 p-3 bg-gray-200 dark:bg-gray-800 rounded-full shadow-md"
-          >
-            {darkMode ? "🌙" : "☀️"}
-          </button>
+          {/* Page Transition Area */}
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeSection}
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              className="flex-1 overflow-y-auto"  // removed h-screen, added overflow-y-auto
+            >
+              {sections[activeSection]}
+            </motion.div>
+          </AnimatePresence>
+
+          <Footer />
         </div>
       )}
     </>

@@ -28,7 +28,7 @@ const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
         <motion.div
           className="fixed inset-0 z-50 flex flex-col items-center justify-center overflow-hidden"
           exit={{ opacity: 0, scale: 1.05 }}
-          transition={{ duration: 0.8, ease: "easeInOut" }}
+          transition={{ duration: 1.8, ease: "easeInOut" }}
         >
           {/* GIF Background */}
           <div
@@ -114,7 +114,7 @@ const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
               className="text-xs font-mono text-gray-600 text-center"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.6 }}
+              transition={{ delay: 0.2 }}
             >
               {progress < 40 && "[ Compiling components... ]"}
               {progress >= 40 && progress < 75 && "[ Mounting experience... ]"}

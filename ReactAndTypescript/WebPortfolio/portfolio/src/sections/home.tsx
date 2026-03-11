@@ -3,21 +3,21 @@ import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 
-const Introduction = () => {
+const home = () => {
   return (
     <section
-      id="introduction"
-      className="h-screen flex flex-col justify-center items-start px-16 md:px-32 text-white relative overflow-hidden"
+      id="home"
+      className="min-h-full flex flex-col justify-center items-start px-16 md:px-32 text-white relative overflow-hidden"
       style={{
-        backgroundImage: `url(/header.jpg)`,
+        backgroundImage: `url(/header.gif)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Dark overlays to dim background image */}
-      <div className="absolute inset-0 bg-black/60"></div>
-      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/45 to-black/25"></div>
+      {/* Dark overlays - reduced opacity to brighten background */}
+      <div className="absolute inset-0 bg-black/30"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-transparent"></div>
 
       {/* Small Intro Text */}
       <motion.p
@@ -87,4 +87,4 @@ const Introduction = () => {
   );
 };
 
-export default Introduction;
+export default home;

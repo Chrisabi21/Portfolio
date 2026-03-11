@@ -1,42 +1,67 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
-const Navbar: React.FC = () => {
-  const menuItems: string[] = ["Introduction", "About", "Skills", "Resume", "Contact"];
+const menuItems = ["HOME", "ABOUT", "SKILLS", "RESUME", "CONTACT"];
 
+interface NavbarProps {
+  activeSection: string;
+  onNavigate: (section: string) => void;
+}
+
+const Navbar = ({ activeSection, onNavigate }: NavbarProps) => {
   return (
-    <header className="fixed top-0 left-0 w-full bg-white dark:bg-gray-900 shadow-md z-50">
+    <header className="fixed top-0 left-0 w-full bg-black/40 backdrop-blur-sm text-white shadow-md z-50">
       <nav className="container mx-auto flex justify-between items-center py-4 px-6">
-
-        {/* Logo on the Left */}
-        <Link
-          to="introduction"
-          smooth={true}
-          duration={500}
-          className="cursor-pointer"
-        >
-          <img src="/logo.png" alt="Logo" className="h-16 w-auto" />
-        </Link>
-
-        {/* Menu Items on the Right */}
         <div className="flex-1 flex justify-end">
-          <ul className="flex space-x-6 items-center text-sm">
-            {menuItems.map((section, index) => (
-              <li key={section}>
-                <Link
-                  to={section.toLowerCase()}
-                  smooth={true}
-                  duration={500}
-                  className="cursor-pointer hover:text-blue-500 dark:hover:text-blue-400 flex items-center space-x-1"
-                >
-                  <span className="text-blue-400 font-mono">{`0${index + 1}.`}</span>
-                  <span>{section}</span>
-                </Link>
-              </li>
-            ))}
+          <ul className="flex space-x-6 items-center text-base">
+            {menuItems.map((section, index) => {
+              const key = section.toLowerCase();
+              const isActive = activeSection === key;
+              return (
+                <li key={section}>
+                  <button
+                    onClick={() => onNavigate(key)}
+                    className="cursor-pointer flex items-center space-x-1 group"
+                  >
+                    <span className="text-blue-400 font-mono font-bold">
+                      {`0${index + 1}.`}
+                    </span>
+                    <span className={`font-semibold tracking-wide ${isActive ? "text-blue-400" : "text-white hover:text-blue-300"}`}>
+                      {isActive ? (
+                        <span className="inline-flex">
+                          {section.split("").map((char, i) => (
+                            <motion.span
+                              key={i}
+                              className="inline-block"
+                              animate={{ y: [0, -5, 0] }}
+                              transition={{
+                                duration: 0.8,
+                                repeat: Infinity,
+                                delay: i * 0.08,
+                                ease: "easeInOut",
+                              }}
+                            >
+                              {char === " " ? "\u00A0" : char}
+                            </motion.span>
+                          ))}
+                        </span>
+                      ) : (
+                        section
+                      )}
+                    </span>
+                    {/* Active underline indicator */}
+                    {/* {isActive && (
+                      <motion.div
+                        layoutId="navIndicator"
+                        className="absolute bottom-0 h-0.5 bg-blue-400 w-full"
+                      />
+                    )} */}
+                  </button>
+                </li>
+              );
+            })}
           </ul>
         </div>
-
       </nav>
     </header>
   );

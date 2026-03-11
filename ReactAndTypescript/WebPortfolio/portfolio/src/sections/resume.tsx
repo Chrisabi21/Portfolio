@@ -5,7 +5,7 @@ const resume = () => {
   return (
     <motion.section
         id="resume"
-        className="h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-800"
+        className="min-h-full flex items-center justify-center bg-gray-100 dark:bg-gray-800"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
