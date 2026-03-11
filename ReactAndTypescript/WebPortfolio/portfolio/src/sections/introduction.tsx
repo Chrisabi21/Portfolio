@@ -37,7 +37,7 @@ const Introduction = () => {
         transition={{ duration: 0.6, delay: 0.4 }}
       >
         <Typewriter
-          words={["Oluwaseun Abiodun."]}
+          words={["OLUWASEUN ABIODUN."]}
           loop={false}
           typeSpeed={100}
           cursor
