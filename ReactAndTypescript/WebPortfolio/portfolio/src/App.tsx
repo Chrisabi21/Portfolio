@@ -9,7 +9,6 @@ import Contact from "./sections/contact";
 import Resume from "./sections/resume";
 import CursorGlow from "./components/cursorGlow";
 import LoadingScreen from "./components/LoadingScreen";
-import CVbutton from "./components/CVbutton";
 
 
 const pageVariants = {
@@ -56,7 +55,6 @@ const App = () => {
           </AnimatePresence>
 
           <Footer />
-          <CVbutton />
         </div>
       )}
     </>
