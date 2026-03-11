@@ -1,122 +1,74 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Linkedin, Mail, Phone } from "lucide-react"; // Import icons
+import { Linkedin,User, Mail, Phone } from "lucide-react"; // Import icons
 
 const Contact = () => {
   return (
-    <section
-      id="contact"
-      className="h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white flex items-stretch relative overflow-hidden"
-    >
+    <section className="w-full min-h-screen flex items-center justify-center bg-[#071a36] px-6 py-12">
       
+      <div className="max-w-6xl w-full bg-white rounded-xl shadow-xl overflow-hidden">
 
-      {/* Left: Contact Form Card with animation */}
-      <motion.div
-        className="w-full md:w-1/2 flex items-center justify-center px-6 py-12 md:py-0 z-10"
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.6 }}
-      >
-        <motion.div
-          className="w-full max-w-lg bg-white dark:bg-gray-800 shadow-xl rounded-2xl p-8 flex flex-col justify-between"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          <div>
-            <h2 className="text-3xl font-bold mb-6 text-blue-500">Contact Me</h2>
-            <form className="space-y-4">
-              {[
-                { id: "name", label: "Name", type: "text" },
-                { id: "email", label: "Email", type: "email" },
-              ].map(({ id, label, type }, index) => (
-                <motion.div
-                  key={id}
-                  initial={{ opacity: 0, x: -10 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.3 + index * 0.2 }}
-                >
-                  <label className="block text-sm mb-1" htmlFor={id}>
-                    {label}
-                  </label>
-                  <input
-                    type={type}
-                    id={id}
-                    className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-gray-700 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-400"
-                  />
-                </motion.div>
-              ))}
+        {/* Top Bar */}
+        <div className="bg-[#3E6399] h-12 flex items-center justify-end px-6 gap-4">
+          <div className="w-14 h-2 bg-white/40 rounded"></div>
+          <div className="w-14 h-2 bg-white/40 rounded"></div>
+          <div className="w-14 h-2 bg-white/40 rounded"></div>
+          <div className="w-14 h-2 bg-white/40 rounded"></div>
+        </div>
 
-              <motion.div
-                initial={{ opacity: 0, x: -10 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.7 }}
-              >
-                <label className="block text-sm mb-1" htmlFor="message">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-gray-700 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-400"
-                ></textarea>
-              </motion.div>
+        <div className="grid md:grid-cols-2">
 
-              <motion.button
-                type="submit"
-                className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-md transition"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.9 }}
-              >
-                Send Message
-              </motion.button>
-            </form>
+          {/* Left Side - Form */}
+          <div className="p-10 flex flex-col justify-center">
+
+            <h2 className="text-4xl font-semibold text-[#324A67] mb-8">
+              Contact Us
+            </h2>
+
+            {/* Name */}
+            <div className="flex items-center bg-gray-100 rounded-full px-5 py-3 mb-4">
+              <User className="text-gray-400 mr-3" size={20} />
+              <input
+                type="text"
+                placeholder="Name"
+                className="bg-transparent outline-none w-full"
+              />
+            </div>
+
+            {/* Email */}
+            <div className="flex items-center bg-gray-100 rounded-full px-5 py-3 mb-4">
+              <Mail className="text-gray-400 mr-3" size={20} />
+              <input
+                type="email"
+                placeholder="Email"
+                className="bg-transparent outline-none w-full"
+              />
+            </div>
+
+            {/* Message */}
+            <textarea
+              placeholder="Message"
+              className="bg-gray-100 rounded-2xl p-4 h-32 outline-none mb-6 resize-none"
+            />
+
+            {/* Button */}
+            <button className="bg-[#18A7BD] text-white py-3 rounded-full text-lg font-medium hover:bg-[#1490a3] transition">
+              Send Message
+            </button>
+
           </div>
 
-          {/* Icons Row */}
-          <div className="mt-8 flex justify-center space-x-6 text-blue-500">
-            <a href="tel:07901654395" className="hover:text-blue-600 transition">
-              <Phone size={28} />
-            </a>
-            <a href="mailto:seunabi20@gmail.com" className="hover:text-blue-600 transition">
-              <Mail size={28} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/oluwaseun-abiodun34"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-600 transition"
-            >
-              <Linkedin size={28} />
-            </a>
+          {/* Right Side - Illustration */}
+          <div className="bg-[#F1F4F7] flex items-center justify-center p-8">
+            <img
+              src="/contact-illustration.png"
+              alt="Contact illustration"
+              className="max-w-sm"
+            />
           </div>
-        </motion.div>
-      </motion.div>
 
-
-      {/* Right: Full-Height Image with background glow and animation */}
-              {/* Right: Full-Height Image */}
-      <motion.div
-        className="hidden md:block w-1/2 relative overflow-hidden"  // removed h-full
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, delay: 0.3 }}
-      >
-        {/* Glow behind the image */}
-        <div className="absolute inset-0 bg-blue-400 opacity-10 blur-3xl z-0"></div>
-
-        {/* Animated Image */}
-        <motion.img
-          src="/contact.jpg"
-          alt="Contact"
-          className="absolute inset-0 w-full h-full object-cover z-10"  // changed to absolute inset-0
-          initial={{ scale: 0.95 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-        />
-      </motion.div>
-
+        </div>
+      </div>
     </section>
   );
 };
