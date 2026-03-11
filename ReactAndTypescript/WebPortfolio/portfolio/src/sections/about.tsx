@@ -5,7 +5,7 @@ const About: React.FC = () => {
   return (
     <motion.section
       id="about"
-      className="min-h-full bg-[#071a36] text-white flex items-center py-16 px-6 md:px-12"
+      className="min-h-screen bg-[#071a36] text-white flex items-center py-16 px-6 md:px-12"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}

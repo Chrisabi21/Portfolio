@@ -52,7 +52,7 @@ const Skills = () => {
   return (
     <motion.section
     id="skills"
-    className="min-h-full flex flex-col relative px-6 pt-12 overflow-hidden"
+    className="h-screen flex flex-col relative px-6 pt-12 overflow-hidden"
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     transition={{ duration: 1 }}

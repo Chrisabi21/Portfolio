@@ -7,7 +7,7 @@ const home = () => {
   return (
     <section
       id="home"
-      className="min-h-full flex flex-col justify-center items-start px-16 md:px-32 text-white relative overflow-hidden"
+      className="h-screen flex flex-col justify-center items-start px-16 md:px-32 text-white relative overflow-hidden"
       style={{
         backgroundImage: `url(/header.gif)`,
         backgroundSize: "cover",
@@ -84,6 +84,7 @@ const home = () => {
         </Link>
       </motion.div>
     </section>
+    
   );
 };
 

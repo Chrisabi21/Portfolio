@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-full bg-white dark:bg-gray-900 text-gray-900 dark:text-white flex items-stretch relative overflow-hidden"
+      className="h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white flex items-stretch relative overflow-hidden"
     >
       
 

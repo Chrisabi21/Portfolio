@@ -61,6 +61,9 @@ const Navbar = ({ activeSection, onNavigate }: NavbarProps) => {
               );
             })}
           </ul>
+          <footer className="p-4 text-center">
+            <p>&copy; 2026 Portfolio</p>
+          </footer>
         </div>
       </nav>
     </header>
