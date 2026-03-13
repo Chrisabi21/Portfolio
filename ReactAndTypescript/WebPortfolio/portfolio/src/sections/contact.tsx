@@ -114,7 +114,7 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <img
-              src="/contact1.jpg"
+              src="/contact2.png"
               alt="Contact illustration"
               className="w-full max-w-[180px] sm:max-w-[240px] md:max-w-sm object-contain"
             />
