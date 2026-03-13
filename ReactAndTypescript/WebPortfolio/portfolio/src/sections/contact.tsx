@@ -52,7 +52,6 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-2">
 
           {/* Left Side - Form */}
-          {/* Left Side - Form */}
           <motion.div
             className="p-6 sm:p-8 md:p-10 flex flex-col justify-center"
             initial={{ opacity: 0, x: -30 }}
@@ -104,24 +103,6 @@ const Contact = () => {
             <button className="bg-[#18A7BD] text-white py-2.5 sm:py-3 rounded-full text-sm sm:text-base md:text-lg font-medium hover:bg-[#1490a3] transition hover:scale-105 duration-300">
               Send Message
             </button>
-
-            {/* Social Icons */}
-            <div className="flex justify-center gap-4 sm:gap-6 mt-5 sm:mt-6 text-[#3E6399]">
-              <a href="tel:07901654395" className="hover:text-[#18A7BD] transition hover:scale-110">
-                <Phone size={20} />
-              </a>
-              <a href="mailto:seunabi20@gmail.com" className="hover:text-[#18A7BD] transition hover:scale-110">
-                <Mail size={20} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/oluwaseun-abiodun34"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-[#18A7BD] transition hover:scale-110"
-              >
-                <Linkedin size={20} />
-              </a>
-            </div>
           </motion.div>
 
           {/* Right Side - Illustration */}
@@ -133,7 +114,7 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <img
-              src="/contact-illustration.png"
+              src="/contact1.jpg"
               alt="Contact illustration"
               className="w-full max-w-[180px] sm:max-w-[240px] md:max-w-sm object-contain"
             />
